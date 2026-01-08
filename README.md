@@ -4,9 +4,11 @@ This repository contains analysis scripts for CUT&Tag experiments used in the st
 
 Reference genome mapping (i.e. generation of BAM and BigWig files) is performed using the [DNAmapping pipelines from snakePipes](https://snakepipes.readthedocs.io/en/stable/content/workflows/DNAmapping.html#dnamapping). This repository focuses on downstream processing, QC, and visualization of the mapped data.
 
+Raw sequencing data (FASTQs) and mapped data (BigWigs and broadPeaks) have been submitted under the GEO accession number GSE292734. 
+
 ⸻
 
-Repository structure
+## Repository structure
 ```
 .
 ├── plotting
@@ -25,7 +27,7 @@ Repository structure
 ```
 ⸻
 
-Dependencies
+## Dependencies
 
 This repository assumes that alignment and initial processing have already been completed using snakePipes DNAmapping.
 
@@ -36,6 +38,7 @@ Core tools
 - [samtools](https://github.com/samtools/samtools)
 - [bedtools](https://bedtools.readthedocs.io/en/latest/)
 - [WiggleTools](https://github.com/Ensembl/WiggleTools)
+- [MACS3](https://macs3-project.github.io/MACS/index.html)
 
 Python packages
 - Python ≥ 3.8
@@ -48,7 +51,7 @@ It is recommended to run the workflows in a conda environment consistent with yo
 
 ⸻
 
-Typical workflow
+## Typical workflow
 1.	Run DNAmapping (snakePipes)
 Generate BAM and BigWig files using the DNAmapping pipeline.
 2.	Preprocessing
@@ -63,10 +66,3 @@ Generate BAM and BigWig files using the DNAmapping pipeline.
 - Quantify signals on predefined BED regions
 - Generate boxplots, profile plots, and heatmaps
 
-⸻
-
-Citation
-
-If you use this code, please cite:
-
-Tsissios et al. (2025). 
