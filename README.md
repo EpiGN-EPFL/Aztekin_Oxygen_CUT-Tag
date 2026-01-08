@@ -1,10 +1,8 @@
 # Oxygen sensing & vertebrate limb regeneration
 
-Tsissios et al., 2025
+This repository contains analysis scripts for CUT&Tag experiments used in the study Oxygen sensing & vertebrate limb regeneration (Tsissios et al., 2025).
 
-This repository contains analysis scripts for CUT&Tag experiments used in the study Oxygen sensing & vertebrate limb regeneration.
-
-Reference genome mapping (i.e. generation of BAM and BigWig files) is performed using the DNAmapping pipelines from snakePipes. This repository focuses on downstream processing, QC, and visualization of the mapped data.
+Reference genome mapping (i.e. generation of BAM and BigWig files) is performed using the [DNAmapping pipelines from snakePipes](https://snakepipes.readthedocs.io/en/stable/content/workflows/DNAmapping.html#dnamapping). This repository focuses on downstream processing, QC, and visualization of the mapped data.
 
 ⸻
 
@@ -32,11 +30,12 @@ Dependencies
 This repository assumes that alignment and initial processing have already been completed using snakePipes DNAmapping.
 
 Core tools
-- snakePipes (DNAmapping pipeline)
-- Snakemake
-- deepTools
-- samtools
-- bedtools
+- [snakePipes](https://snakepipes.readthedocs.io/en/stable/content/setting_up.html) (DNAmapping pipeline)
+- [Snakemake](https://snakemake.readthedocs.io/en/stable/)
+- [deepTools](https://deeptools.readthedocs.io/en/latest/)
+- [samtools](https://github.com/samtools/samtools)
+- [bedtools](https://bedtools.readthedocs.io/en/latest/)
+- [WiggleTools](https://github.com/Ensembl/WiggleTools)
 
 Python packages
 - Python ≥ 3.8
@@ -45,7 +44,7 @@ Python packages
 - matplotlib
 - seaborn
 
-It is recommended to run the workflows in a conda environment consistent with your snakePipes setup.
+It is recommended to run the workflows in a conda environment consistent with your snakePipes setup. Please adjust paths and configuration files as needed for your dataset.
 
 ⸻
 
@@ -63,18 +62,6 @@ Generate BAM and BigWig files using the DNAmapping pipeline.
 4.	Visualization
 - Quantify signals on predefined BED regions
 - Generate boxplots, profile plots, and heatmaps
-
-⸻
-
-Example usage
-
-Run a Snakemake workflow:
-
-```
-snakemake -s preprocessing/bw_log2.snakefile --cores 8
-```
-
-Adjust paths and configuration files as needed for your dataset.
 
 ⸻
 
