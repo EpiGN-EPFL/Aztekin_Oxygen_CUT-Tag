@@ -1,10 +1,10 @@
 # Oxygen sensing & vertebrate limb regeneration
 
-This repository contains analysis scripts for CUT&Tag experiments used in the study Oxygen sensing & vertebrate limb regeneration (Tsissios et al., 2025).
+This repository contains analysis scripts for CUT&Tag experiments used in the study Oxygen sensing & vertebrate limb regeneration (Tsissios et al., 2026).
 
 Reference genome mapping (i.e. generation of BAM and BigWig files) is performed using the [DNAmapping pipelines from snakePipes](https://snakepipes.readthedocs.io/en/stable/content/workflows/DNAmapping.html#dnamapping). This repository focuses on downstream processing, QC, and visualization of the mapped data.
 
-Raw sequencing data (FASTQs) and mapped data (BigWigs and broadPeaks) have been submitted under the GEO accession number GSE292734. 
+Raw sequencing data (FASTQs) and mapped data (BigWigs and broadPeaks) have been submitted under the GEO accession number GSE292734. Zenodo DOI for the released code: [10.5281/zenodo.18400193](https://zenodo.org/records/18400193) 
 
 ⸻
 
